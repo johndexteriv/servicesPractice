@@ -13,4 +13,8 @@ export class AccountsService {
       status: "unknown",
     },
   ];
+
+  addAccount(name: string, status: string) {}
+
+  updateStatus(id: number, status: string) {}
 }

@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-import { stat } from "node:fs";
 import { AccountsService } from "../core/services/accounts/accounts.service";
 import { LoggingService } from "../core/services/logging/logging.service";
 
@@ -7,7 +6,7 @@ import { LoggingService } from "../core/services/logging/logging.service";
   selector: "app-account",
   templateUrl: "./account.component.html",
   styleUrls: ["./account.component.css"],
-  providers: [LoggingService, AccountsService],
+  providers: [LoggingService],
 })
 export class AccountComponent {
   @Input() account: { name: string; status: string };

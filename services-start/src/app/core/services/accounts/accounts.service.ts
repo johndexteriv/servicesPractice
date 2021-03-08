@@ -14,7 +14,11 @@ export class AccountsService {
     },
   ];
 
-  addAccount(name: string, status: string) {}
+  addAccount(name: string, status: string) {
+    this.accounts.push({ name: name, status: status });
+  }
 
-  updateStatus(id: number, status: string) {}
+  updateStatus(id: number, status: string) {
+    this.accounts[id].status = status;
+  }
 }
